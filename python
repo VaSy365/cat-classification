@@ -1,0 +1,32 @@
+def klasifikasi_kucing(ukuran_tubuh, panjang_bulu):
+    if ukuran_tubuh == 'kecil':
+        if panjang_bulu == 'pendek':
+            return "Kemungkinan ras: Siamese"
+        elif panjang_bulu == 'sedang':
+            return "Kemungkinan ras: Devon Rex"
+        elif panjang_bulu == 'panjang':
+            return "Kemungkinan ras: Persian"
+    
+    elif ukuran_tubuh == 'sedang':
+        if panjang_bulu == 'pendek':
+            return "Kemungkinan ras: Bengal"
+        elif panjang_bulu == 'sedang':
+            return "Kemungkinan ras: British Shorthair"
+        elif panjang_bulu == 'panjang':
+            return "Kemungkinan ras: Ragdoll"
+    
+    elif ukuran_tubuh == 'besar':
+        if panjang_bulu == 'pendek':
+            return "Kemungkinan ras: Maine Coon"
+        elif panjang_bulu == 'sedang':
+            return "Kemungkinan ras: Sphynx"
+        elif panjang_bulu == 'panjang':
+            return "Kemungkinan ras: Norwegian Forest Cat"
+
+    return "Ras tidak diketahui"
+
+# Contoh penggunaan
+ukuran_tubuh = 'sedang'
+panjang_bulu = 'panjang'
+hasil = klasifikasi_kucing(ukuran_tubuh, panjang_bulu)
+print(hasil)
