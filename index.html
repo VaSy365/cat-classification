@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasifikasi Ras Kucing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Klasifikasi Ras Kucing</h1>
+        <form id="classificationForm">
+            <label>Ukuran Tubuh (0: Kecil, 1: Besar): <input type="number" id="size" min="0" max="1" required></label><br>
+            <label>Warna Bulu (0: Putih, 1: Coklat, 2: Hitam): <input type="number" id="furColor" min="0" max="2" required></label><br>
+            <label>Panjang Bulu (0: Pendek, 1: Panjang): <input type="number" id="furLength" min="0" max="1" required></label><br>
+            <label>Kepribadian (0: Aktif, 1: Tenang): <input type="number" id="personality" min="0" max="1" required></label><br>
+            <button type="button" onclick="classifyCat()">Prediksi Ras</button>
+        </form>
+        <h2>Hasil Prediksi: <span id="predictionResult">-</span></h2>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/ml-cart@5.0.0/build/ml-cart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
